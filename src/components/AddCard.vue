@@ -9,23 +9,23 @@
       <my-input v-model="description" name="description" placeholder="Введите должность" />
     </div>
     <div class="item">
-      <label for="image">Отчество</label>
+      <label for="image">Ссылка на картинку</label>
       <my-input v-model="image" name="image" placeholder="Введите ссылку на картинку" />
     </div>
     <div class="item">
-      <label for="salary_start">Телефон</label>
+      <label for="salary_start">Минимальная ЗП</label>
       <my-input v-model="salary_start" name="salary_start" placeholder="Введите минимальную зарплату" />
     </div>
     <div class="item">
-      <label for="salary_end">Email</label>
+      <label for="salary_end">Максимальная ЗП</label>
       <my-input v-model="salary_end" name="salary_end" placeholder="Введите максимальную зарплату" />
     </div>
     <div class="item">
-      <label for="education">Город</label>
+      <label for="education">Образование</label>
       <my-input v-model="education" name="education" placeholder="Введите образование" />
     </div>
     <div class="item">
-      <label for="experience">Дата рождения</label>
+      <label for="experience">Опыт работы</label>
       <my-input v-model="experience" name="experience" placeholder="Введите опыт работы" />
     </div>
     <div class="item">
@@ -183,7 +183,8 @@ export default {
       this.company = ''
       this.city = ''
       this.date = ''
-      this.$router.push(`/admin`)
+
+      this.$router.push('/admin')
     }
   },
   data() {

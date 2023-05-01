@@ -240,6 +240,7 @@ export default {
 @media (max-width: 600px) {
   .card-page {
     padding: 20px;
+    height: 100%;
   }
 
   .item {
